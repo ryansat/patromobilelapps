@@ -51,11 +51,6 @@ class LoginController with ChangeNotifier {
 
         // Fetch user details after successful login
         int userId = response['userId'];
-        // Map<String, dynamic> user = await getUserDetails(userId, authKey);
-
-        // Save user data to SharedPreferences
-        // await saveUserData(user);
-
         _openMyPage(context);
       } else {
         ScaffoldMessenger.of(context).showSnackBar(SnackBar(
